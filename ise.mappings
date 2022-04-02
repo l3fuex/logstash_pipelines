@@ -1,0 +1,152 @@
+PUT _component_template/ise_mappings
+{
+  "template": {
+    "mappings": {
+      "numeric_detection": true,
+      "dynamic_date_formats": [
+        "strict_date_optional_time",
+        "yyyy/MM/dd HH:mm:ss Z||yyyy/MM/dd Z"
+      ],
+      "dynamic_templates": [
+        {
+          "strings_as_text": {
+            "mapping": {
+              "type": "text"
+            },
+            "match_mapping_type": "string"
+          }
+        }
+      ],
+      "date_detection": true,
+      "properties": {
+        "AuthenticationIdentityStore": {
+          "type": "keyword"
+        },
+        "NAS-IP-Address": {
+          "type": "ip"
+        },
+        "RadiusPacketType": {
+          "type": "keyword"
+        },
+        "AuthenticationMethod": {
+          "type": "keyword"
+        },
+        "NAS-Port-Type": {
+          "type": "keyword"
+        },
+        "IdentityPolicyMatchedRule": {
+          "type": "keyword"
+        },
+        "HostIdentityGroup": {
+          "type": "keyword"
+        },
+        "User-Name": {
+          "type": "keyword"
+        },
+        "IdentityGroup": {
+          "type": "keyword"
+        },
+        "hostname": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "msg_class": {
+          "type": "keyword"
+        },
+        "SelectedAccessService": {
+          "type": "keyword"
+        },
+        "RadiusFlowType": {
+          "type": "keyword"
+        },
+        "NetworkDeviceName": {
+          "type": "keyword"
+        },
+        "Protocol": {
+          "type": "keyword"
+        },
+        "DestinationIPAddress": {
+          "type": "ip"
+        },
+        "Service-Type": {
+          "type": "keyword"
+        },
+        "ISEPolicySetName": {
+          "type": "keyword"
+        },
+        "SelectedAuthenticationIdentityStores": {
+          "type": "keyword"
+        },
+        "UserName": {
+          "type": "keyword"
+        },
+        "cat_name": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "Device Type": {
+          "type": "keyword"
+        },
+        "SelectedAuthorizationProfiles": {
+          "type": "keyword"
+        },
+        "IsThirdPartyDeviceFlow": {
+          "type": "boolean"
+        },
+        "NAS-Port-Id": {
+          "type": "keyword"
+        },
+        "msg_text": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "IdentitySelectionMatchedRule": {
+          "type": "keyword"
+        },
+        "FailureReason": {
+          "type": "keyword"
+        },
+        "Network Device Profile": {
+          "type": "keyword"
+        },
+        "NetworkDeviceProfileName": {
+          "type": "keyword"
+        },
+        "msg_sev": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "AuthorizationPolicyMatchedRule": {
+          "type": "keyword"
+        },
+        "UserType": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
