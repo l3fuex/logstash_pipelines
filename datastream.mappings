@@ -1,0 +1,40 @@
+PUT _component_template/data-stream-mappings
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "data.stream": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "fields": {
+            "namespace": {
+              "type": "keyword"
+            },
+            "type": {
+              "type": "keyword"
+            },
+            "dataset": {
+              "type": "keyword"
+            }
+          },
+          "index_options": "docs",
+          "split_queries_on_whitespace": false,
+          "doc_values": true
+        },
+        "event.dataset": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "index_options": "docs",
+          "split_queries_on_whitespace": false,
+          "doc_values": true
+        }
+      }
+    }
+  }
+}
