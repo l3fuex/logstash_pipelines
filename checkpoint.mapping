@@ -1,0 +1,1530 @@
+PUT _component_template/checkpoint_mappings
+{
+  "template": {
+    "mappings": {
+      "dynamic_templates": [],
+      "properties": {
+        "inspection_information": {
+          "type": "text"
+        },
+        "dns_type": {
+          "type": "text"
+        },
+        "sip_reason": {
+          "type": "text"
+        },
+        "src_user_name": {
+          "type": "text"
+        },
+        "scan_hosts_hour": {
+          "type": "integer"
+        },
+        "installed_products": {
+          "type": "text"
+        },
+        "icmp": {
+          "type": "text"
+        },
+        "parent_rule (match table)": {
+          "type": "integer"
+        },
+        "via": {
+          "type": "text"
+        },
+        "email_headers": {
+          "type": "text"
+        },
+        "ftp_user": {
+          "type": "text"
+        },
+        "dlp_categories": {
+          "type": "text"
+        },
+        "fw_message": {
+          "type": "text"
+        },
+        "loguid": {
+          "type": "text"
+        },
+        "nat_rulenum": {
+          "type": "integer"
+        },
+        "specific_data_type_name": {
+          "type": "text"
+        },
+        "file_md5": {
+          "type": "text"
+        },
+        "security_outzone": {
+          "type": "text"
+        },
+        "voip_from_user_type": {
+          "type": "text"
+        },
+        "mitre_initial_access": {
+          "type": "text"
+        },
+        "content_length": {
+          "type": "text"
+        },
+        "email_message_id": {
+          "type": "text"
+        },
+        "app_id (match table)": {
+          "type": "integer"
+        },
+        "dlp_repository_skipped_files_number": {
+          "type": "integer"
+        },
+        "sequencenum": {
+          "type": "integer"
+        },
+        "extension_version": {
+          "type": "text"
+        },
+        "mitre_lateral_movement": {
+          "type": "text"
+        },
+        "rpc_prog": {
+          "type": "integer"
+        },
+        "community": {
+          "type": "text"
+        },
+        "dlp_repository_scanned_directories_number": {
+          "type": "integer"
+        },
+        "reject_category": {
+          "type": "text"
+        },
+        "int_end": {
+          "type": "integer"
+        },
+        "https_inspection_rule_id": {
+          "type": "text"
+        },
+        "bcc": {
+          "type": "text"
+        },
+        "scheme": {
+          "type": "text"
+        },
+        "confidence_level": {
+          "type": "integer"
+        },
+        "indicator_uuid": {
+          "type": "text"
+        },
+        "industry_reference": {
+          "type": "text"
+        },
+        "http_host": {
+          "type": "text"
+        },
+        "cc": {
+          "type": "text"
+        },
+        "tcp_packet_out_of_state": {
+          "type": "text"
+        },
+        "file_sha1": {
+          "type": "text"
+        },
+        "rule_action": {
+          "type": "text"
+        },
+        "dlp_word_list": {
+          "type": "text"
+        },
+        "referrer_parent_uid": {
+          "type": "text"
+        },
+        "dce-rpc_interface_uuid": {
+          "type": "text"
+        },
+        "internal_error": {
+          "type": "text"
+        },
+        "policy_name": {
+          "type": "text"
+        },
+        "session_id": {
+          "type": "text"
+        },
+        "diameter_msg_type": {
+          "type": "text"
+        },
+        "email_status": {
+          "type": "text"
+        },
+        "fw_subproduct": {
+          "type": "keyword"
+        },
+        "unique_detected_week": {
+          "type": "integer"
+        },
+        "mirror_and_decrypt_type": {
+          "type": "text"
+        },
+        "calc_desc": {
+          "type": "text"
+        },
+        "information": {
+          "type": "text"
+        },
+        "nat_addtnl_rulenum": {
+          "type": "integer"
+        },
+        "server_inbound_interface": {
+          "type": "text"
+        },
+        "snid": {
+          "type": "text"
+        },
+        "dst_machine_name": {
+          "type": "text"
+        },
+        "proxy_user_dn": {
+          "type": "text"
+        },
+        "dlp_fingerprinted_files_number": {
+          "type": "integer"
+        },
+        "mitre_exfiltration": {
+          "type": "text"
+        },
+        "extracted_file_verdict": {
+          "type": "text"
+        },
+        "delivery_time": {
+          "type": "date"
+        },
+        "tid": {
+          "type": "integer"
+        },
+        "malware_family": {
+          "type": "keyword"
+        },
+        "scan_hosts_day": {
+          "type": "integer"
+        },
+        "failure_impact": {
+          "type": "text"
+        },
+        "operation number": {
+          "type": "integer"
+        },
+        "process_name": {
+          "type": "text"
+        },
+        "dlp_data_type_uid": {
+          "type": "text"
+        },
+        "app_sig_id (match table)": {
+          "type": "text"
+        },
+        "anti_virus_type": {
+          "type": "text"
+        },
+        "client_ip": {
+          "type": "ip"
+        },
+        "cluster_info": {
+          "type": "text"
+        },
+        "info": {
+          "type": "text"
+        },
+        "mime_from": {
+          "type": "text"
+        },
+        "https_inspection_action": {
+          "type": "text"
+        },
+        "attack_status": {
+          "type": "text"
+        },
+        "scrub_activity": {
+          "type": "text"
+        },
+        "capture_uuid": {
+          "type": "text"
+        },
+        "dropped_file_name": {
+          "type": "text"
+        },
+        "site_name": {
+          "type": "text"
+        },
+        "server_outbound_interface": {
+          "type": "text"
+        },
+        "auth_method": {
+          "type": "text"
+        },
+        "app_rule_id": {
+          "type": "text"
+        },
+        "email_control_analysis": {
+          "type": "text"
+        },
+        "dlp_repository_scanned_files_number": {
+          "type": "integer"
+        },
+        "scrubbed_content": {
+          "type": "text"
+        },
+        "xlatesint": {
+          "type": "integer"
+        },
+        "email_subject": {
+          "type": "text"
+        },
+        "voip_media_ipp": {
+          "type": "text"
+        },
+        "xlatesrc": {
+          "type": "ip"
+        },
+        "origin": {
+          "type": "text"
+        },
+        "peer_gateway": {
+          "type": "ip"
+        },
+        "match_fk": {
+          "type": "integer"
+        },
+        "dst_ip": {
+          "type": "ip"
+        },
+        "layer_uuid": {
+          "type": "text"
+        },
+        "duration": {
+          "type": "date"
+        },
+        "spyware_name": {
+          "type": "text"
+        },
+        "src_machine_name": {
+          "type": "text"
+        },
+        "voip_call_state": {
+          "type": "text"
+        },
+        "next_scheduled_scan_date": {
+          "type": "date"
+        },
+        "connection_uid": {
+          "type": "text"
+        },
+        "xlatedint": {
+          "type": "integer"
+        },
+        "scope": {
+          "type": "ip"
+        },
+        "voip_media_codec": {
+          "type": "text"
+        },
+        "chunk_type": {
+          "type": "text"
+        },
+        "matched_file": {
+          "type": "text"
+        },
+        "arrival_time": {
+          "type": "date"
+        },
+        "reply_status": {
+          "type": "integer"
+        },
+        "encryption_failure": {
+          "type": "text"
+        },
+        "icap_server_service": {
+          "type": "text"
+        },
+        "scan_ended": {
+          "type": "date"
+        },
+        "message": {
+          "type": "text"
+        },
+        "ticket_id": {
+          "type": "text"
+        },
+        "additional_rdata": {
+          "type": "text"
+        },
+        "parent_process_username": {
+          "type": "text"
+        },
+        "referrer": {
+          "type": "text"
+        },
+        "voip_to_user_type": {
+          "type": "text"
+        },
+        "observable_id": {
+          "type": "text"
+        },
+        "service": {
+          "type": "text"
+        },
+        "esod_rule_name": {
+          "type": "text"
+        },
+        "broker_publisher": {
+          "type": "ip"
+        },
+        "email_control": {
+          "type": "text"
+        },
+        "origin_ip": {
+          "type": "ip"
+        },
+        "received_bytes": {
+          "type": "integer"
+        },
+        "mime_to": {
+          "type": "text"
+        },
+        "app_package": {
+          "type": "text"
+        },
+        "scan_mail": {
+          "type": "integer"
+        },
+        "authorization": {
+          "type": "text"
+        },
+        "voip_reg_user_type": {
+          "type": "text"
+        },
+        "developer_certificate_name": {
+          "type": "text"
+        },
+        "email_queue_id": {
+          "type": "text"
+        },
+        "limit_applied": {
+          "type": "integer"
+        },
+        "context_num": {
+          "type": "integer"
+        },
+        "media_type": {
+          "type": "text"
+        },
+        "action": {
+          "type": "keyword"
+        },
+        "esod_associated_policies": {
+          "type": "text"
+        },
+        "match_id (match table)": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "process_username": {
+          "type": "text"
+        },
+        "scrub_total_time": {
+          "type": "text"
+        },
+        "impacted_files": {
+          "type": "text"
+        },
+        "indicator_name": {
+          "type": "text"
+        },
+        "certificate_resource": {
+          "type": "text"
+        },
+        "icap_service_id": {
+          "type": "integer"
+        },
+        "icap_server_name": {
+          "type": "text"
+        },
+        "dropped_file_hash": {
+          "type": "text"
+        },
+        "additional_info": {
+          "type": "text"
+        },
+        "mitre_execution": {
+          "type": "text"
+        },
+        "verdict": {
+          "type": "text"
+        },
+        "source_object": {
+          "type": "text"
+        },
+        "next_hop_ip": {
+          "type": "text"
+        },
+        "sctp_association_state": {
+          "type": "text"
+        },
+        "short_desc": {
+          "type": "text"
+        },
+        "ike_ids": {
+          "type": "text"
+        },
+        "status": {
+          "type": "text"
+        },
+        "sub_policy_uid": {
+          "type": "text"
+        },
+        "ip_option": {
+          "type": "integer"
+        },
+        "scrub_time": {
+          "type": "text"
+        },
+        "first_hit_time": {
+          "type": "integer"
+        },
+        "scan_started": {
+          "type": "date"
+        },
+        "c_bytes": {
+          "type": "integer"
+        },
+        "incident_extension": {
+          "type": "text"
+        },
+        "client_outbound_bytes": {
+          "type": "integer"
+        },
+        "extracted_file_hash": {
+          "type": "text"
+        },
+        "unique_detected_day": {
+          "type": "integer"
+        },
+        "file_direction": {
+          "type": "text"
+        },
+        "action_reason": {
+          "type": "text"
+        },
+        "nat46": {
+          "type": "text"
+        },
+        "objecttype": {
+          "type": "text"
+        },
+        "detected_on": {
+          "type": "text"
+        },
+        "proxy_src_ip": {
+          "type": "ip"
+        },
+        "log_id": {
+          "type": "integer"
+        },
+        "product_family": {
+          "type": "integer"
+        },
+        "s_port": {
+          "type": "integer"
+        },
+        "dlp_repository_total_size": {
+          "type": "integer"
+        },
+        "product": {
+          "type": "keyword"
+        },
+        "similar_hashes": {
+          "type": "text"
+        },
+        "email_queue_name": {
+          "type": "text"
+        },
+        "os_version": {
+          "type": "keyword"
+        },
+        "end_time": {
+          "type": "date"
+        },
+        "dropped_file_verdict": {
+          "type": "text"
+        },
+        "trusted_domain": {
+          "type": "text"
+        },
+        "failure_reason": {
+          "type": "text"
+        },
+        "server_outbound_bytes": {
+          "type": "integer"
+        },
+        "suppressed_logs": {
+          "type": "integer"
+        },
+        "certificate_validation": {
+          "type": "text"
+        },
+        "voip_method": {
+          "type": "text"
+        },
+        "file_size": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "text"
+        },
+        "machine": {
+          "type": "text"
+        },
+        "app_desc (match table)": {
+          "type": "text"
+        },
+        "dropped_incoming": {
+          "type": "integer"
+        },
+        "os_name": {
+          "type": "text"
+        },
+        "sig_id": {
+          "type": "text"
+        },
+        "connectivity_level": {
+          "type": "text"
+        },
+        "session_name": {
+          "type": "text"
+        },
+        "spyware_type": {
+          "type": "text"
+        },
+        "dlp_incident_uid": {
+          "type": "text"
+        },
+        "monitor_reason": {
+          "type": "text"
+        },
+        "subject": {
+          "type": "text"
+        },
+        "app_repackaged": {
+          "type": "text"
+        },
+        "limit_requested": {
+          "type": "integer"
+        },
+        "aggregation_info": {
+          "type": "text"
+        },
+        "session_uid": {
+          "type": "text"
+        },
+        "voip_reg_period": {
+          "type": "integer"
+        },
+        "dlp_fingerprint_short_status": {
+          "type": "text"
+        },
+        "dlp_repository_root_path": {
+          "type": "text"
+        },
+        "scan_result": {
+          "type": "text"
+        },
+        "voip_call_dir": {
+          "type": "text"
+        },
+        "registered_ip-phones": {
+          "type": "text"
+        },
+        "file_type": {
+          "type": "text"
+        },
+        "question_rdata": {
+          "type": "text"
+        },
+        "email_content": {
+          "type": "text"
+        },
+        "layer_name": {
+          "type": "keyword"
+        },
+        "packet_capture_time": {
+          "type": "text"
+        },
+        "last_rematch_time": {
+          "type": "date"
+        },
+        "mitre_command_and_control": {
+          "type": "text"
+        },
+        "destination_object": {
+          "type": "text"
+        },
+        "scv_user": {
+          "type": "text"
+        },
+        "word_list": {
+          "type": "text"
+        },
+        "data_type_name": {
+          "type": "text"
+        },
+        "parent_file_hash": {
+          "type": "text"
+        },
+        "http_location": {
+          "type": "text"
+        },
+        "inspection_settings_log": {
+          "type": "text"
+        },
+        "dlp_addtional_action": {
+          "type": "text"
+        },
+        "emulated_on": {
+          "type": "text"
+        },
+        "nat_exhausted_pool": {
+          "type": "text"
+        },
+        "email_id": {
+          "type": "text"
+        },
+        "dlp_fingerprint_long_status": {
+          "type": "text"
+        },
+        "dlp_repository_id": {
+          "type": "text"
+        },
+        "dst": {
+          "type": "ip"
+        },
+        "drops_amount": {
+          "type": "integer"
+        },
+        "esod_scan_status": {
+          "type": "text"
+        },
+        "server_inbound_bytes": {
+          "type": "integer"
+        },
+        "elapsed": {
+          "type": "date"
+        },
+        "client_inbound_packets": {
+          "type": "integer"
+        },
+        "last_detection": {
+          "type": "text"
+        },
+        "end_user_firewall_type": {
+          "type": "text"
+        },
+        "content_disposition": {
+          "type": "text"
+        },
+        "mitre_discovery": {
+          "type": "text"
+        },
+        "voip_exp": {
+          "type": "integer"
+        },
+        "dst_country": {
+          "type": "text"
+        },
+        "app_sid_id": {
+          "type": "text"
+        },
+        "cp_message": {
+          "type": "text"
+        },
+        "src": {
+          "type": "ip"
+        },
+        "indicator_reference": {
+          "type": "text"
+        },
+        "parent_process_name": {
+          "type": "text"
+        },
+        "objectname": {
+          "type": "text"
+        },
+        "outzone": {
+          "type": "text"
+        },
+        "long_desc": {
+          "type": "text"
+        },
+        "inspection_profile": {
+          "type": "text"
+        },
+        "conns_amount": {
+          "type": "integer"
+        },
+        "esod_access_status": {
+          "type": "text"
+        },
+        "bytes": {
+          "type": "integer"
+        },
+        "observable_comment": {
+          "type": "text"
+        },
+        "diameter_app_ID": {
+          "type": "integer"
+        },
+        "dropped_total": {
+          "type": "integer"
+        },
+        "http_server": {
+          "type": "text"
+        },
+        "packet_capture": {
+          "type": "text"
+        },
+        "parent_process_md5": {
+          "type": "text"
+        },
+        "tls_server_host_name": {
+          "type": "text"
+        },
+        "scan_direction": {
+          "type": "text"
+        },
+        "dlp_transint": {
+          "type": "text"
+        },
+        "reason": {
+          "type": "text"
+        },
+        "special_properties": {
+          "type": "integer"
+        },
+        "referrer_self_uid": {
+          "type": "text"
+        },
+        "security_inzone": {
+          "type": "text"
+        },
+        "alert (UP alert hll table)": {
+          "type": "text"
+        },
+        "dlp_repository_directories_number": {
+          "type": "integer"
+        },
+        "allocated_ports": {
+          "type": "integer"
+        },
+        "dns_message_type": {
+          "type": "text"
+        },
+        "usercheck_incident_uid": {
+          "type": "text"
+        },
+        "logic changes": {
+          "type": "text"
+        },
+        "icmp_code": {
+          "type": "integer"
+        },
+        "reject_id": {
+          "type": "text"
+        },
+        "dlp_file_name": {
+          "type": "text"
+        },
+        "extracted_file_uid": {
+          "type": "text"
+        },
+        "diameter_cmd_code": {
+          "type": "integer"
+        },
+        "voip_reg_server": {
+          "type": "ip"
+        },
+        "inspection_item": {
+          "type": "text"
+        },
+        "mitre_persistence": {
+          "type": "text"
+        },
+        "scan_hosts_week": {
+          "type": "integer"
+        },
+        "server_inbound_packets": {
+          "type": "integer"
+        },
+        "protection_name": {
+          "type": "keyword"
+        },
+        "similar_communication": {
+          "type": "text"
+        },
+        "files_names": {
+          "type": "text"
+        },
+        "number_of_errors": {
+          "type": "integer"
+        },
+        "host_time": {
+          "type": "text"
+        },
+        "voip_reg_ipp": {
+          "type": "integer"
+        },
+        "original_queue_id": {
+          "type": "text"
+        },
+        "links_num": {
+          "type": "integer"
+        },
+        "dlp_repository_reached_directories_number": {
+          "type": "integer"
+        },
+        "mitre_credential_access": {
+          "type": "text"
+        },
+        "authority_rdata": {
+          "type": "text"
+        },
+        "voip_config": {
+          "type": "text"
+        },
+        "voip_reg_int": {
+          "type": "integer"
+        },
+        "source_os": {
+          "type": "text"
+        },
+        "cookier": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "client_inbound_bytes": {
+          "type": "integer"
+        },
+        "voip_duration": {
+          "type": "date"
+        },
+        "unique_detected_hour": {
+          "type": "integer"
+        },
+        "client_version": {
+          "type": "text"
+        },
+        "dst_phone_number": {
+          "type": "text"
+        },
+        "matched_category": {
+          "type": "text"
+        },
+        "scrub_download_time": {
+          "type": "text"
+        },
+        "msgid": {
+          "type": "text"
+        },
+        "destination_dns_hostname": {
+          "type": "text"
+        },
+        "message_size": {
+          "type": "integer"
+        },
+        "similar_strings": {
+          "type": "text"
+        },
+        "ppp": {
+          "type": "text"
+        },
+        "dstkeyid": {
+          "type": "text"
+        },
+        "rule (match table)": {
+          "type": "integer"
+        },
+        "fservice": {
+          "type": "integer"
+        },
+        "dlp_related_incident_uid": {
+          "type": "text"
+        },
+        "drop_reason": {
+          "type": "text"
+        },
+        "to": {
+          "type": "text"
+        },
+        "operation": {
+          "type": "text"
+        },
+        "indicator_description": {
+          "type": "text"
+        },
+        "performance_impact": {
+          "type": "integer"
+        },
+        "app_version": {
+          "type": "text"
+        },
+        "attachments_num": {
+          "type": "integer"
+        },
+        "rulebase_id": {
+          "type": "integer"
+        },
+        "client_type": {
+          "type": "text"
+        },
+        "tcp_end_reason": {
+          "type": "text"
+        },
+        "parent_file_uid": {
+          "type": "text"
+        },
+        "needs_browse_time": {
+          "type": "integer"
+        },
+        "src_phone_number": {
+          "type": "text"
+        },
+        "source_interface": {
+          "type": "text"
+        },
+        "voip_call_id": {
+          "type": "text"
+        },
+        "cookieI": {
+          "type": "text"
+        },
+        "fs-proto": {
+          "type": "text"
+        },
+        "query": {
+          "type": "text"
+        },
+        "app_rule_name": {
+          "type": "text"
+        },
+        "securexl_message": {
+          "type": "text"
+        },
+        "vpn_feature_name": {
+          "type": "text"
+        },
+        "duplicate": {
+          "type": "text"
+        },
+        "sync": {
+          "type": "text"
+        },
+        "start_time": {
+          "type": "date"
+        },
+        "message_info": {
+          "type": "text"
+        },
+        "similiar_iocs": {
+          "type": "text"
+        },
+        "name": {
+          "type": "text"
+        },
+        "matched_file_text_segments": {
+          "type": "integer"
+        },
+        "matched_file_percentage": {
+          "type": "integer"
+        },
+        "packet_capture_unique_id": {
+          "type": "text"
+        },
+        "desc": {
+          "type": "text"
+        },
+        "policy_mgmt": {
+          "type": "text"
+        },
+        "vendor_list": {
+          "type": "text"
+        },
+        "tcp_state": {
+          "type": "text"
+        },
+        "event_count": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "text"
+        },
+        "sctp_error": {
+          "type": "text"
+        },
+        "malware_rule_name": {
+          "type": "text"
+        },
+        "speed": {
+          "type": "integer"
+        },
+        "voip_reject_reason": {
+          "type": "text"
+        },
+        "voip_log_type": {
+          "type": "text"
+        },
+        "content_type": {
+          "type": "text"
+        },
+        "top_archive_file_name": {
+          "type": "text"
+        },
+        "dlp_data_type_name": {
+          "type": "text"
+        },
+        "precise_error": {
+          "type": "text"
+        },
+        "voip_reason_info": {
+          "type": "text"
+        },
+        "severity": {
+          "type": "text"
+        },
+        "summary": {
+          "type": "text"
+        },
+        "https_inspection_rule_name": {
+          "type": "text"
+        },
+        "total_attachments": {
+          "type": "integer"
+        },
+        "file_name": {
+          "type": "text"
+        },
+        "dlp_rule_uid": {
+          "type": "text"
+        },
+        "dlp_template_score": {
+          "type": "text"
+        },
+        "email_recipients_num": {
+          "type": "integer"
+        },
+        "protection_type": {
+          "type": "keyword"
+        },
+        "src_port": {
+          "type": "integer"
+        },
+        "malware_action": {
+          "type": "keyword"
+        },
+        "risk": {
+          "type": "integer"
+        },
+        "web_client_type": {
+          "type": "text"
+        },
+        "time": {
+          "type": "text"
+        },
+        "dlp_recipients": {
+          "type": "text"
+        },
+        "client_type_os": {
+          "type": "text"
+        },
+        "voip_call_term_time": {
+          "type": "text"
+        },
+        "analyzed_on": {
+          "type": "text"
+        },
+        "answer_rdata": {
+          "type": "text"
+        },
+        "inspection_category": {
+          "type": "text"
+        },
+        "extracted_file_names": {
+          "type": "text"
+        },
+        "packets": {
+          "type": "text"
+        },
+        "domain_name": {
+          "type": "text"
+        },
+        "tcp_flags": {
+          "type": "text"
+        },
+        "packet_amount": {
+          "type": "integer"
+        },
+        "web_server_type": {
+          "type": "text"
+        },
+        "cgnet": {
+          "type": "text"
+        },
+        "proxy_machine_name": {
+          "type": "text"
+        },
+        "hide_ip": {
+          "type": "ip"
+        },
+        "xlatedst": {
+          "type": "ip"
+        },
+        "subscriber": {
+          "type": "ip"
+        },
+        "watermark": {
+          "type": "text"
+        },
+        "method": {
+          "type": "text"
+        },
+        "inzone": {
+          "type": "text"
+        },
+        "rematch_info": {
+          "type": "text"
+        },
+        "interfacedir": {
+          "type": "keyword"
+        },
+        "esod_rule_type": {
+          "type": "text"
+        },
+        "dlp_repository_scanned_total_size": {
+          "type": "integer"
+        },
+        "parent_file_name": {
+          "type": "text"
+        },
+        "dlp_repository_scan_progress": {
+          "type": "integer"
+        },
+        "icap_more_info": {
+          "type": "text"
+        },
+        "mitre_defense_evasion": {
+          "type": "text"
+        },
+        "rule_name (match table)": {
+          "type": "text"
+        },
+        "log_delay": {
+          "type": "integer"
+        },
+        "app_risk (match table)": {
+          "type": "integer"
+        },
+        "dlp_action_reason": {
+          "type": "text"
+        },
+        "client_outbound_interface": {
+          "type": "text"
+        },
+        "icmp_type": {
+          "type": "integer"
+        },
+        "content_risk": {
+          "type": "integer"
+        },
+        "dns_query": {
+          "type": "text"
+        },
+        "methods": {
+          "type": "text"
+        },
+        "isp_link": {
+          "type": "text"
+        },
+        "voip_est_codec": {
+          "type": "text"
+        },
+        "capacity": {
+          "type": "integer"
+        },
+        "blade_name": {
+          "type": "text"
+        },
+        "invalid_file_size": {
+          "type": "integer"
+        },
+        "session_description": {
+          "type": "text"
+        },
+        "peer_ip_probing_status_update": {
+          "type": "text"
+        },
+        "dropped_file_type": {
+          "type": "text"
+        },
+        "categories": {
+          "type": "text"
+        },
+        "cvpn_category": {
+          "type": "text"
+        },
+        "malware_rule_id": {
+          "type": "text"
+        },
+        "origin_sic_name": {
+          "type": "text"
+        },
+        "smartdefense_profile (TP match table)": {
+          "type": "text"
+        },
+        "esod_noncompliance_reason": {
+          "type": "text"
+        },
+        "server_outbound_packets": {
+          "type": "integer"
+        },
+        "voip_attach_sz": {
+          "type": "integer"
+        },
+        "dlp_relevant_data_types": {
+          "type": "text"
+        },
+        "extracted_file_type": {
+          "type": "text"
+        },
+        "voip_attach_action_info": {
+          "type": "text"
+        },
+        "email_session_id": {
+          "type": "text"
+        },
+        "esod_rule_action": {
+          "type": "text"
+        },
+        "ike": {
+          "type": "text"
+        },
+        "protection_id": {
+          "type": "text"
+        },
+        "diameter_app_name": {
+          "type": "text"
+        },
+        "proxy_user_name": {
+          "type": "text"
+        },
+        "remediated_files": {
+          "type": "text"
+        },
+        "triggered_by": {
+          "type": "text"
+        },
+        "link_probing_status_update": {
+          "type": "text"
+        },
+        "src_user_dn": {
+          "type": "text"
+        },
+        "status_update": {
+          "type": "date"
+        },
+        "dst_user_name": {
+          "type": "text"
+        },
+        "hit": {
+          "type": "integer"
+        },
+        "protocol": {
+          "type": "text"
+        },
+        "client_outbound_packets": {
+          "type": "integer"
+        },
+        "from": {
+          "type": "text"
+        },
+        "rule_uid (match table)": {
+          "type": "text"
+        },
+        "client_inbound_interface": {
+          "type": "text"
+        },
+        "email_spam_category": {
+          "type": "text"
+        },
+        "user_group": {
+          "type": "text"
+        },
+        "mitre_impact": {
+          "type": "text"
+        },
+        "ports_usage": {
+          "type": "integer"
+        },
+        "resource": {
+          "type": "text"
+        },
+        "dlp_subject": {
+          "type": "text"
+        },
+        "expire_time": {
+          "type": "date"
+        },
+        "browse_time": {
+          "type": "date"
+        },
+        "src_country": {
+          "type": "text"
+        },
+        "file_id": {
+          "type": "integer"
+        },
+        "proto": {
+          "type": "integer"
+        },
+        "te_verdict_determined_by": {
+          "type": "text"
+        },
+        "process_md5": {
+          "type": "text"
+        },
+        "observable_name": {
+          "type": "text"
+        },
+        "appi_name": {
+          "type": "text"
+        },
+        "voip_media_port": {
+          "type": "text"
+        },
+        "app_properties (match table)": {
+          "type": "text"
+        },
+        "interface_name": {
+          "type": "keyword"
+        },
+        "last_hit_time": {
+          "type": "integer"
+        },
+        "file_sha256": {
+          "type": "text"
+        },
+        "mitre_collection": {
+          "type": "text"
+        },
+        "dlp_repository_files_number": {
+          "type": "integer"
+        },
+        "sent_bytes": {
+          "type": "integer"
+        },
+        "additional_ip": {
+          "type": "text"
+        },
+        "src_ip": {
+          "type": "ip"
+        },
+        "scv_message_info": {
+          "type": "text"
+        },
+        "administrator": {
+          "type": "text"
+        },
+        "service_id": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "index_options": "docs",
+          "split_queries_on_whitespace": false,
+          "doc_values": true
+        },
+        "dlp_watermark_profile": {
+          "type": "text"
+        },
+        "client_name": {
+          "type": "text"
+        },
+        "https_validation": {
+          "type": "text"
+        },
+        "int_start": {
+          "type": "integer"
+        },
+        "user_agent": {
+          "type": "text"
+        },
+        "fieldschanges": {
+          "type": "text"
+        },
+        "appi_name (match table)": {
+          "type": "text"
+        },
+        "first_detection": {
+          "type": "text"
+        },
+        "outgoing_url": {
+          "type": "text"
+        },
+        "srckeyid": {
+          "type": "text"
+        },
+        "cvpn_resource": {
+          "type": "text"
+        },
+        "dropped_outgoing": {
+          "type": "integer"
+        },
+        "dlp_rule_name": {
+          "type": "text"
+        },
+        "properties (match table)": {
+          "type": "text"
+        },
+        "sub_policy_name": {
+          "type": "text"
+        },
+        "dlp_repository_not_scanned_directories_percentage": {
+          "type": "integer"
+        },
+        "peer_ip": {
+          "type": "text"
+        },
+        "scan_id": {
+          "type": "text"
+        },
+        "mitre_privilege_escalation": {
+          "type": "text"
+        },
+        "user": {
+          "type": "text"
+        },
+        "dlp_repository_unreachable_directories_number": {
+          "type": "integer"
+        },
+        "dlp_violation_description": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
