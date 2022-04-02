@@ -1,0 +1,57 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "application": {
+          "type": "keyword"
+        },
+        "pri": {
+          "type": "integer"
+        },
+        "message_id": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "pid": {
+          "type": "integer"
+        },
+        "logsource": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "priority": {
+          "type": "integer"
+        },
+        "facility": {
+          "type": "integer"
+        },
+        "severity_label": {
+          "type": "keyword"
+        },
+        "facility_label": {
+          "type": "keyword"
+        },
+        "timestamp": {
+          "format": "strict_date_optional_time||epoch_millis||MMM  d HH:mm:ss",
+          "index": true,
+          "ignore_malformed": false,
+          "store": false,
+          "type": "date",
+          "doc_values": true
+        }
+      }
+    }
+  }
+}
