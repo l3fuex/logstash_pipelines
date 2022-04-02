@@ -1,0 +1,191 @@
+PUT _component_template/geoip-mappings
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "dst_geo.country_name": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "src_geo.continent_code": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "src_geo.city_name": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "src_geo.country_name": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "src_geo.location": {
+          "ignore_malformed": false,
+          "type": "geo_point",
+          "ignore_z_value": true
+        },
+        "src_geo.timezone": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "src_geo.country_code2": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "dst_geo.timezone": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "src_geo.country_code3": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "dst_geo.country_code2": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "dst_geo.ip": {
+          "index": true,
+          "store": false,
+          "type": "ip",
+          "doc_values": true
+        },
+        "dst_geo.country_code3": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "dst_geo.continent_code": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "dst_geo.postal_code": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "dst_geo.city_name": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "split_queries_on_whitespace": false,
+          "index_options": "docs",
+          "doc_values": true
+        },
+        "dst_geo.region_code": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "dst_geo.location": {
+          "ignore_malformed": false,
+          "type": "geo_point",
+          "ignore_z_value": true
+        },
+        "src_geo.postal_code": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "src_geo.ip": {
+          "index": true,
+          "store": false,
+          "type": "ip",
+          "doc_values": true
+        },
+        "src_geo.region_code": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        }
+      }
+    }
+  }
+}
