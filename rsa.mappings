@@ -1,0 +1,184 @@
+PUT _component_template/rsa_mappings
+{
+  "template": {
+    "mappings": {
+      "_routing": {
+        "required": false
+      },
+      "numeric_detection": false,
+      "dynamic_date_formats": [
+        "strict_date_optional_time",
+        "yyyy/MM/dd HH:mm:ss Z||yyyy/MM/dd Z"
+      ],
+      "dynamic": true,
+      "_source": {
+        "excludes": [],
+        "includes": [],
+        "enabled": true
+      },
+      "date_detection": true,
+      "properties": {
+        "User_first_name": {
+          "type": "keyword"
+        },
+        "Agent_type": {
+          "coerce": true,
+          "index": true,
+          "ignore_malformed": false,
+          "store": false,
+          "type": "integer",
+          "doc_values": true
+        },
+        "Action": {
+          "type": "keyword"
+        },
+        "Category": {
+          "type": "keyword"
+        },
+        "Domain_object_1_name": {
+          "type": "text"
+        },
+        "User_login_name": {
+          "type": "keyword"
+        },
+        "Domain_object_2_security_domain_ID": {
+          "type": "text"
+        },
+        "Reason": {
+          "type": "keyword"
+        },
+        "Client_IP": {
+          "type": "ip"
+        },
+        "Result": {
+          "type": "keyword"
+        },
+        "Modifications": {
+          "type": "text"
+        },
+        "hostname": {
+          "type": "keyword"
+        },
+        "Domain_object_1_type": {
+          "type": "text"
+        },
+        "Policy_ID": {
+          "type": "text"
+        },
+        "Domain_object_1_ID": {
+          "type": "text"
+        },
+        "Session_ID": {
+          "type": "text"
+        },
+        "User_ID": {
+          "type": "text"
+        },
+        "Argument_10": {
+          "type": "text"
+        },
+        "Agent_ID": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "Policy_method_name": {
+          "type": "keyword"
+        },
+        "User_identity_source_ID": {
+          "type": "text"
+        },
+        "Argument_6": {
+          "type": "text"
+        },
+        "Argument_7": {
+          "type": "text"
+        },
+        "Argument_8": {
+          "type": "text"
+        },
+        "Argument_9": {
+          "type": "text"
+        },
+        "IMS_server_instance": {
+          "type": "text"
+        },
+        "Argument_2": {
+          "type": "text"
+        },
+        "Argument_3": {
+          "type": "text"
+        },
+        "Argument_4": {
+          "type": "text"
+        },
+        "Action_ID": {
+          "type": "keyword"
+        },
+        "Argument_5": {
+          "type": "text"
+        },
+        "Agent_address": {
+          "type": "ip"
+        },
+        "User_last_name": {
+          "type": "keyword"
+        },
+        "User_securtiy_domain_ID": {
+          "type": "text"
+        },
+        "Event_ID": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "docs"
+        },
+        "Server_IP": {
+          "type": "ip"
+        },
+        "Policy_method_ID": {
+          "type": "text"
+        },
+        "Domain_object_2_name": {
+          "type": "text"
+        },
+        "Agent_security_domain_ID": {
+          "type": "text"
+        },
+        "Domain_object_2_ID": {
+          "type": "text"
+        },
+        "Domain_object_2_identity_source_ID": {
+          "type": "text"
+        },
+        "Agent_name": {
+          "type": "keyword"
+        },
+        "Log_level": {
+          "type": "keyword"
+        },
+        "Argument_1": {
+          "type": "text"
+        },
+        "Domain_object_2_type": {
+          "type": "text"
+        },
+        "Policy_expression": {
+          "type": "text"
+        },
+        "Batch_ID": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
