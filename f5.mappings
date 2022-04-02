@@ -1,0 +1,164 @@
+PUT _component_template/f5_mappings
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "device_version": {
+          "type": "version"
+        },
+        "device_product": {
+          "type": "keyword"
+        },
+        "acl_policy_type": {
+          "type": "keyword"
+        },
+        "source_ipint_categories": {
+          "type": "keyword"
+        },
+        "dst": {
+          "type": "ip"
+        },
+        "translated_dest_ip": {
+          "type": "ip"
+        },
+        "dest_fqdn": {
+          "type": "text"
+        },
+        "acl_rule_uuid": {
+          "type": "text"
+        },
+        "context_name": {
+          "type": "keyword"
+        },
+        "sa_translation_pool": {
+          "type": "keyword"
+        },
+        "source_user_group": {
+          "type": "keyword"
+        },
+        "translated_vlanvlan": {
+          "type": "text"
+        },
+        "translated_dest_port": {
+          "type": "integer"
+        },
+        "dest_ipint_categories": {
+          "type": "keyword"
+        },
+        "hostname": {
+          "type": "keyword"
+        },
+        "date_time": {
+          "format": "MMM dd yyyy HH:mm:ss",
+          "index": true,
+          "ignore_malformed": false,
+          "store": false,
+          "type": "date",
+          "doc_values": true
+        },
+        "vlan": {
+          "type": "keyword"
+        },
+        "flow_id": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "source_fqdn": {
+          "type": "text"
+        },
+        "acl_rule_name": {
+          "type": "keyword"
+        },
+        "action": {
+          "type": "keyword"
+        },
+        "context_type": {
+          "type": "keyword"
+        },
+        "source_user": {
+          "type": "keyword"
+        },
+        "translated_src_ip": {
+          "type": "ip"
+        },
+        "translated_ip_protocol": {
+          "eager_global_ordinals": false,
+          "norms": false,
+          "index": true,
+          "store": false,
+          "type": "keyword",
+          "index_options": "docs",
+          "split_queries_on_whitespace": false,
+          "doc_values": true
+        },
+        "translated_src_port": {
+          "type": "integer"
+        },
+        "partition_name": {
+          "type": "keyword"
+        },
+        "errdefs_msg_name": {
+          "type": "keyword"
+        },
+        "severity": {
+          "type": "integer"
+        },
+        "s_port": {
+          "type": "integer"
+        },
+        "bigip_mgmt_ip": {
+          "index": true,
+          "store": false,
+          "type": "ip",
+          "doc_values": true
+        },
+        "src": {
+          "type": "ip"
+        },
+        "route_domain": {
+          "type": "integer"
+        },
+        "send_to_vs": {
+          "type": "text"
+        },
+        "sa_translation_type": {
+          "eager_global_ordinals": false,
+          "index_phrases": false,
+          "fielddata": false,
+          "norms": true,
+          "index": true,
+          "store": false,
+          "type": "text",
+          "index_options": "positions"
+        },
+        "acl_policy_name": {
+          "type": "keyword"
+        },
+        "ip_protocol": {
+          "type": "keyword"
+        },
+        "d_port": {
+          "type": "integer"
+        },
+        "translated_route_domain": {
+          "type": "integer"
+        },
+        "device_vendor": {
+          "type": "keyword"
+        },
+        "drop_reason": {
+          "type": "keyword"
+        },
+        "errdefs_msgno": {
+          "type": "long"
+        }
+      }
+    }
+  }
+}
