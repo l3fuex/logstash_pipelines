@@ -59,6 +59,9 @@ PUT _component_template/f5_mappings
         "vlan": {
           "type": "keyword"
         },
+        "ip_intelligence_policy_name": {
+          "type": "keyword"
+        },
         "flow_id": {
           "eager_global_ordinals": false,
           "index_phrases": false,
@@ -157,6 +160,9 @@ PUT _component_template/f5_mappings
         },
         "errdefs_msgno": {
           "type": "long"
+        },
+        "ip_intelligence_threat_name": {
+          "type": "keyword"
         }
       }
     }
