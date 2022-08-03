@@ -24,6 +24,9 @@ PUT _component_template/data-stream-mappings
           "split_queries_on_whitespace": false,
           "doc_values": true
         },
+        "type": {
+          "type": "keyword"
+        },
         "event.dataset": {
           "eager_global_ordinals": false,
           "norms": false,
