@@ -1,6 +1,6 @@
 # Logstash Pipelines
 
-Just some logstash pipelines and elastic mappings I am using in my cluster ... .
+This is more of an reminder to myself. Just some logstash pipelines and elastic mappings I am using ... .
 
 Mapping Ressources:
 + https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk144192
