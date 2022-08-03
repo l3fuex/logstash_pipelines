@@ -1,3 +1,4 @@
+PUT _component_template/syslog_mappings
 {
   "template": {
     "mappings": {
@@ -44,7 +45,7 @@
           "type": "keyword"
         },
         "timestamp": {
-          "format": "strict_date_optional_time||epoch_millis||MMM  d HH:mm:ss",
+          "format": "strict_date_optional_time||epoch_millis||MMM  d HH:mm:ss||MMM d HH:mm:ss",
           "index": true,
           "ignore_malformed": false,
           "store": false,
