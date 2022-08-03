@@ -56,6 +56,9 @@ PUT _component_template/ise_mappings
           "index_options": "docs",
           "doc_values": true
         },
+        "AuthenticationIdentityStatus": {
+          "type": "keyword"
+        },
         "msg_class": {
           "type": "keyword"
         },
